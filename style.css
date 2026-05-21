@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #f4ebd0; 
+    background-color: #ffe4e1; /* Questo è un bel rosa pastello (MistyRose) */
     color: #3e2723; 
     font-family: 'Georgia', serif;
     margin: 0;
@@ -13,7 +13,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background-color: #8b5a2b; 
+    background-color: #d87093; 
     padding: 15px 20px;
     display: flex;
     align-items: center;
@@ -127,8 +127,8 @@ body {
 }
 
 .btn-scopri {
-    background-color: #8b5a2b;
-    color: #f4ebd0;
+    background-color: #ff69b4; /* Un rosa HotPink che risalta */
+    color: white;
     padding: 15px 35px;
     text-decoration: none;
     font-weight: bold;
@@ -172,7 +172,7 @@ body {
 .categoria-titolo {
     font-size: 1.8rem;
     color: #3e2723;
-    border-bottom: 2px solid #8b5a2b;
+    border-bottom: 2px solid #ff69b4;
     padding-bottom: 5px;
     margin-bottom: 25px;
 }
