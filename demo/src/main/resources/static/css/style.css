@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4ebd0; 
+    color: #3e2723; 
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #8b5a2b; 
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.nav-title {
+    color: #f4ebd0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* SIDEBAR / TENDINA */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: #3e2723;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #dfc088;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+    background-color: #5d4037;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3e2723;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* HERO PERFETTAMENTE CENTRATA E INTENSA */
+.hero {
+    background: linear-gradient(rgba(62, 39, 35, 0.85), rgba(62, 39, 35, 0.9)), url('https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=1200') no-repeat center center/cover;
+    min-height: 85vh; /* Prende quasi tutta la schermata iniziale */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content {
+    max-width: 750px; /* Stringe il testo per renderlo più leggibile e denso */
+    margin: 0 auto;
+}
+
+.hero-badge {
+    color: #dfc088;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #f4ebd0;
+    margin: 15px 0;
+    line-height: 1.1;
+}
+
+.hero h1 .sub-title {
+    color: #dfc088;
+    font-size: 2.5rem;
+}
+
+.divider-bamboo {
+    height: 3px;
+    width: 80px;
+    background-color: #8b5a2b;
+    margin: 20px auto;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f4ebd0;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+.btn-scopri {
+    background-color: #8b5a2b;
+    color: #f4ebd0;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-scopri:hover {
+    background-color: #dfc088;
+    color: #3e2723;
+    transform: translateY(-2px);
+}
+
+/* STRUTTURA CATEGORIE MENÙ */
+.section-bamboo {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-bamboo h2 {
+    color: #8b5a2b;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-intro {
+    font-style: italic;
+    color: #5d4037;
+    margin-bottom: 50px;
+}
+
+.categoria-blocco {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.categoria-titolo {
+    font-size: 1.8rem;
+    color: #3e2723;
+    border-bottom: 2px solid #8b5a2b;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.placeholder-card {
+    background-color: #e8dcbf !important;
+    border: 2px dashed #8b5a2b !important;
+    text-align: center !important;
+    padding: 30px !important;
+}
+
+/* FOOTER */
+footer {
+    background-color: #3e2723;
+    color: #f4ebd0;
+    padding: 60px 20px 20px 20px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-box h3 {
+    color: #dfc088;
+    border-bottom: 1px solid #5d4037;
+    padding-bottom: 10px;
+}
+
+#btn-biscotto {
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#btn-biscotto:hover {
+    background-color: #dfc088;
+    color: #3e2723;
+}
+
+#frase-fortuna {
+    margin-top: 15px;
+    font-style: italic;
+    color: #dfc088;
+}
+
+.legal {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #a1887f;
+}
+.contatti-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-tel, .btn-whatsapp, .btn-mappa {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.btn-mappa { background: #d32f2f; } /* Rosso Google */
+.btn-tel { background: #007bff; }   /* Blu Telefono */
+.btn-whatsapp { background: #25D366; } /* Verde WhatsApp */
+
+.btn-tel:hover, .btn-whatsapp:hover, .btn-mappa:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+/* Se lo schermo è grande, mettili in fila */
+@media (min-width: 600px) {
+    .contatti-btns {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+/* Stile per er link Instagram */
+.insta-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Spazio tra icona e testo */
+    color: #E1306C; /* Colore tipico de Instagram */
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.insta-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
